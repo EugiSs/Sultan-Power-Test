@@ -1,0 +1,47 @@
+.header {
+  padding-block: 2rem;
+
+  &__body {
+    @include cnt();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: $black;
+    margin: 0 0 2rem 0;
+  }
+
+  &__btn {
+    @extend %btn;
+    width: 28.4rem;
+    padding-block: 1.2rem;
+  }
+
+  @media ($tablet) {
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+  @media ($desktop) {
+    padding-block: 3rem;
+    &__body {
+      max-width: 106.5rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__text {
+      max-width: 65rem;
+      font-size: 2.4rem;
+      margin: 0 3rem 0 0;
+    }
+    &__btn {
+      max-width: 22.6rem;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.order {
+  @include cnt(28rem);
+  color: $black;
+  background: $white;
+  box-shadow: 0px 4px 50px rgba(136, 136, 136, 0.25);
+  border-radius: 2rem;
+  padding: 1.5rem 2.2rem;
+
+  &__content {
+  }
+
+  &__title {
+    max-width: 30rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__timer {
+    max-width: 25.5rem;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    width: 100%;
+    &_title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    & input {
+      @extend %input;
+    }
+    &:first-child {
+      margin-bottom: 1rem;
+      @media ($desktop) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    margin-top: 2rem;
+    max-width: 22rem;
+    max-height: 6.3rem;
+  }
+
+  &__note {
+    font-size: 1.2rem;
+    max-width: 19rem;
+  }
+
+  @media ($desktop) {
+    max-width: 35.6rem;
+    padding: 3rem;
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__btn {
+      max-width: 26.5rem;
+      max-height: 7.5rem;
+      margin-top: 2.5rem;
+    }
+  }
+}

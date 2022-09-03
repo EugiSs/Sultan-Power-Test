@@ -1,0 +1,41 @@
+.timer {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  &__descr {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__time {
+    &_num {
+      @extend %btn;
+      width: 6.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &_text {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  &__divider {
+    color: $black;
+  }
+}
+
+.hours {
+}
+.minutes {
+}
+.seconds {
+}
