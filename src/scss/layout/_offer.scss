@@ -1,5 +1,6 @@
 .offer {
-  padding: 3.5rem 0 4rem;
+  padding-top: 3.5rem;
+  margin-bottom: 1.5rem;
 
   &__title {
     @include cnt();
@@ -11,21 +12,7 @@
   }
 
   &__img {
-    position: relative;
-    &_mobile {
-      @extend %img;
-      display: block;
-    }
-    &_desktop {
-      @extend %img;
-      display: none;
-    }
     &::after {
-      content: '';
-      position: absolute;
-      bottom: -2.5rem;
-      left: 0;
-      width: 100%;
       height: 85%;
       background: linear-gradient(
         360deg,
@@ -36,23 +23,7 @@
   }
 
   &__paragraphs {
-    @include cnt();
-    font-size: 1.4rem;
-    margin-top: 2.2rem;
-
-    &_first {
-      margin-bottom: 2rem;
-    }
-
-    &_second {
-    }
-  }
-
-  @media ($tablet) {
-    &__paragraphs {
-      max-width: 57.5rem;
-      font-size: 1.8rem;
-    }
+    padding-block: 1.5rem;
   }
 
   @media ($desktop) {
@@ -60,47 +31,19 @@
     background-repeat: no-repeat;
     background-position: -14rem -1rem;
     background-size: 36%;
+    margin-bottom: 4rem;
     &__title {
       max-width: 80.6rem;
       margin-bottom: 6rem;
     }
-    &__body {
-      max-width: 144rem;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-between;
-      margin-inline: auto;
-    }
     &__img {
-      display: flex;
-      max-width: 50%;
-      align-items: stretch;
-      align-self: stretch;
-
-      &_mobile {
-        width: auto;
-      }
       &::after {
-        display: none;
-      }
-    }
-    &__paragraphs {
-      font-size: 2.4rem;
-      padding-block: 1.5rem;
-      margin: 0 2rem 0 0;
-      &_first {
-        margin-bottom: 3rem;
-      }
-    }
-  }
-  @media (min-width: 1025px) {
-    &__img {
-      &_mobile {
-        display: none;
-      }
-      &_desktop {
-        display: block;
+        height: 100%;
+        background: linear-gradient(
+          88.98deg,
+          #ffffff 3.21%,
+          rgba(58, 58, 58, 0) 41.76%
+        );
       }
     }
   }

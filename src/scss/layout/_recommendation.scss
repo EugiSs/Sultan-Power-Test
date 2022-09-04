@@ -1,0 +1,39 @@
+.recommendation {
+  background-color: $orange;
+  &__body {
+  }
+
+  &__img {
+    &::after {
+      background: linear-gradient(
+        0.48deg,
+        #f8c67d 11.28%,
+        rgba(255, 255, 255, 0) 53.99%
+      );
+    }
+  }
+
+  &__paragraphs {
+  }
+
+  @media ($desktop) {
+    &__body {
+      max-width: 144rem;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      margin-inline: auto;
+    }
+
+    &__img {
+      &::after {
+        background: linear-gradient(
+          90.22deg,
+          #f8c67d 0.21%,
+          rgba(255, 255, 255, 0) 31.72%
+        );
+      }
+    }
+  }
+}

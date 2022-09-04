@@ -1,6 +1,6 @@
 @mixin cnt($maxw: 32rem) {
   max-width: $maxw;
-  // box-sizing: content-box;
+  box-sizing: content-box;
   padding: 0 1.5rem;
   margin: 0 auto;
 
@@ -71,11 +71,8 @@
   text-align: center;
   color: $color;
 
-  @media ($tablet) {
-    font-size: 2.2rem;
-  }
   @media ($desktop) {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   @media ($projector) {
     font-size: 3.6rem;

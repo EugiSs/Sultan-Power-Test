@@ -1,0 +1,291 @@
+.impact {
+  @include cnt();
+  max-width: none;
+  background-color: $darkRed;
+  border-radius: 1.5rem;
+  color: $white;
+  padding: 1rem 1rem;
+  margin-inline: 0.5rem;
+  margin-bottom: 4rem;
+
+  &__content {
+    border: 2px solid $white;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  &__title {
+    @include h2();
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 5rem;
+    @media ($desktop) {
+      max-width: 57.3rem;
+      margin-inline: auto;
+    }
+  }
+
+  &__body {
+    @media (min-width: 1025px) {
+      display: flex;
+      justify-content: space-around;
+      padding-block: 5rem;
+    }
+  }
+
+  &__items {
+    max-width: 32rem;
+    @media ($tablet) {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      max-width: none;
+      gap: 5rem 1rem;
+
+      &.items-top {
+        grid-template-areas:
+          '. B .'
+          'A B C'
+          'A . C';
+        & #impact-1 {
+          grid-area: A;
+        }
+        & #impact-2 {
+          grid-area: B;
+          text-align: center;
+          max-width: 17rem;
+        }
+        & #impact-3 {
+          grid-area: C;
+        }
+      }
+      &.items-bottom {
+        grid-template-areas:
+          'A . C'
+          'A B C'
+          '. B .';
+        & #impact-4 {
+          grid-area: A;
+        }
+        & #impact-5 {
+          grid-area: B;
+        }
+        & #impact-6 {
+          grid-area: C;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      gap: 2rem 2rem;
+      &.items-top {
+        margin-left: 0;
+        grid-template-areas:
+          '. . A A'
+          'B B B .'
+          '. . C C';
+        & #impact-2 {
+          text-align: right;
+        }
+      }
+      &.items-bottom {
+        margin-right: 0;
+        grid-template-areas:
+          'A A . .'
+          '. B B B'
+          'C C . .';
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: grid;
+    align-items: center;
+    min-height: 4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left: 6rem;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &::after {
+      content: url(../img/icons/vote_mobile.svg);
+      position: absolute;
+      width: 5.2rem;
+      height: 4.5rem;
+      left: 0;
+      bottom: 50%;
+      transform: translateY(50%);
+      z-index: 10;
+    }
+
+    @media ($tablet) {
+      max-width: 14rem;
+      display: block;
+      position: static;
+      min-height: auto;
+      padding-left: 0;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    @media (min-width: 550px) {
+      font-size: 1.7rem;
+    }
+    @media ($desktop) {
+      max-width: 20rem;
+    }
+    @media ($projector) {
+      max-width: 26rem;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__images {
+    max-width: 35.5rem;
+    min-height: 35rem;
+    position: relative;
+    text-align: center;
+    margin-block: 2rem;
+    margin-inline: auto;
+    @media ($desktop) {
+      max-width: 49rem;
+      min-height: 40rem;
+      margin-block: 4rem;
+    }
+    @media (min-width: 1025px) {
+      min-width: 40rem;
+      margin: 0 1rem;
+    }
+    @media ($projector) {
+      min-width: 48rem;
+    }
+  }
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & img {
+      width: 100%;
+    }
+    &.image1 {
+      width: 90%;
+    }
+    &.image2 {
+      z-index: 2;
+      width: 100%;
+    }
+    &.image3 {
+      z-index: 3;
+      max-width: 52.5rem;
+      width: 160%;
+      top: 55%;
+    }
+    &.image4 {
+      z-index: 4;
+      max-width: 46rem;
+      width: 140%;
+      transform: translate(-47%, -50%);
+    }
+    &.image5 {
+      z-index: 5;
+      max-width: 13rem;
+      width: 40%;
+      transform: translate(-20%, -10%);
+    }
+
+    @media ($desktop) {
+      &.image3 {
+        max-width: none;
+      }
+      &.image4 {
+        max-width: none;
+      }
+      &.image5 {
+        max-width: none;
+      }
+    }
+  }
+
+  &__icon {
+    display: none;
+    position: absolute;
+    width: 7rem;
+    height: 5.2rem;
+    z-index: 10;
+    @media ($tablet) {
+      display: block;
+    }
+    & img {
+      width: 100%;
+    }
+    &.icon1 {
+      top: 2.5rem;
+      left: 2rem;
+    }
+    &.icon2 {
+      top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &.icon3 {
+      top: 2.5rem;
+      right: 2rem;
+    }
+    &.icon4 {
+      bottom: 2.5rem;
+      left: 2rem;
+    }
+    &.icon5 {
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &.icon6 {
+      bottom: 2.5rem;
+      right: 2rem;
+    }
+
+    @media ($desktop) {
+      &.icon2 {
+        top: -7rem;
+      }
+      &.icon5 {
+        bottom: -7rem;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      &.icon2 {
+        top: 50%;
+        left: -10%;
+        transform: translateY(-50%);
+      }
+      &.icon5 {
+        bottom: 50%;
+        left: 90%;
+        transform: translateY(50%);
+      }
+    }
+  }
+
+  @media ($tablet) {
+    padding: 2.7rem 2rem;
+    margin-inline: 1.5rem;
+    &__content {
+      padding: 3rem;
+    }
+  }
+
+  @media ($projector) {
+    max-width: 133rem;
+    margin-inline: auto;
+  }
+}

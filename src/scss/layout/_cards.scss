@@ -4,9 +4,8 @@
   background-color: #420707;
   border-radius: 1.5rem;
   padding: 2.7rem 1.6rem;
-  margin-inline: 1rem;
   margin-bottom: 3.5rem;
-  @media (min-width: 400px) { 
+  @media (min-width: 400px) {
     margin-inline: 3.2rem;
   }
 
@@ -33,7 +32,28 @@
 
   &__item {
     width: 100%;
+    position: relative;
     margin: 1.7rem 1.6rem;
+    &:last-child {
+      mix-blend-mode: screen;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #393939;
+      border-radius: 2rem;
+      mix-blend-mode: screen;
+      filter: blur(42px);
+    }
+  }
+
+  @media ($tablet) {
+    margin-inline: 1.5rem;
   }
 
   @media ($desktop) {

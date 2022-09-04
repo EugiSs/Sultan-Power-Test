@@ -1,0 +1,105 @@
+.ingredients {
+  &__head {
+    position: relative;
+    max-width: 18rem;
+    height: 7rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 8.5rem;
+    margin-bottom: 3rem;
+    margin-inline: auto;
+    & span {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__content {
+    background: linear-gradient(
+        178.67deg,
+        $white 8.53%,
+        rgba(255, 255, 255, 0) 70%
+      ),
+      url(../img/ingredients/background_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5rem;
+  }
+
+  &__image {
+    position: absolute;
+    left: 50%;
+    &.image1 {
+      top: -8rem;
+      transform: translateX(-70%);
+    }
+    &.image2 {
+      top: -5.5rem;
+      transform: translateX(4%);
+    }
+  }
+
+  &__body {
+    @include cnt();
+    display: grid;
+    justify-content: center;
+    gap: 2.4rem 0;
+  }
+
+  &__ingredient {
+    max-width: 32rem;
+  }
+
+  @media ($desktop) {
+    &__head {
+      max-width: 55rem;
+      font-size: 2.4rem;
+      margin-top: 13rem;
+      margin-bottom: 8rem;
+      & span {
+        font-size: 3rem;
+      }
+    }
+    &__content {
+      background: linear-gradient(
+          180.1deg,
+          $white -3.2%,
+          rgba(255, 255, 255, 0) 80%
+        ),
+        url(../img/ingredients/backgroung.png);
+    }
+    &__image {
+      &.image1 {
+        top: -13rem;
+      }
+      &.image2 {
+        top: -8.5rem;
+      }
+    }
+    &__body {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem 2rem;
+    }
+    &__ingredient {
+      max-width: 63rem;
+    }
+  }
+
+  @media ($projector) {
+    &__head {
+      margin-top: 1.5rem;
+    }
+    &__image {
+      &.image1 {
+        top: 50%;
+        transform: translateY(-50%);
+        left: -52%;
+      }
+      &.image2 {
+        top: 50%;
+        transform: translateY(-40%);
+        left: -37%;
+      }
+    }
+  }
+}

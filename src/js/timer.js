@@ -1,37 +1,26 @@
 export default function startTimer() {
-  let timer = document.querySelector('.timer')
-  let hoursElem = timer.querySelector('.hours')
-  let minutesElem = timer.querySelector('.minutes')
-  let secondsElem = timer.querySelector('.seconds')
+  calcTimer()
+  setInterval(calcTimer, 1000)
+}
 
-  let hours = Number(hoursElem.innerHTML)
-  let minutes = Number(minutesElem.innerHTML)
-  let seconds = Number(secondsElem.innerHTML)
+function calcTimer() {
+  let currentDate = new Date().getTime()
+  let targetDate = new Date().setHours(24, 0, 0)
+  let totalSeconds = (targetDate - currentDate) / 1000
 
-  if (seconds == 0) {
-    if (minutes == 0) {
-      if (hours == 0) {
-        // timer.style.display = 'none'
-        alert('Акция закончилась')
-        return
-      }
-      hours--
-      minutes = 60
-    }
-    minutes--
-    seconds = 59
-  } else {
-    seconds--
-  }
+  let hours = Math.floor(totalSeconds / 3600)
+  if (totalSeconds < 3600) hours = 0
+  let minutes = Math.floor((totalSeconds - hours * 3600) / 60)
+  let seconds = Math.floor(totalSeconds - hours * 3600 - minutes * 60)
+
   hours = pad(hours)
   minutes = pad(minutes)
   seconds = pad(seconds)
 
-  hoursElem.innerHTML = hours
-  minutesElem.innerHTML = minutes
-  secondsElem.innerHTML = seconds
-
-  setTimeout(startTimer, 1000)
+  let timerEl = document.querySelector('.timer')
+  timerEl.querySelector('.hours').innerHTML = hours
+  timerEl.querySelector('.minutes').innerHTML = minutes
+  timerEl.querySelector('.seconds').innerHTML = seconds
 }
 
 function pad(num) {

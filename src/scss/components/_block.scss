@@ -1,0 +1,71 @@
+.block {
+  &__img {
+    position: relative;
+    & picture {
+    }
+    & img {
+      @extend %img;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2.5rem;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__paragraphs {
+    @include cnt();
+    font-size: 1.4rem;
+    padding-block: 2.2rem 4rem;
+    margin-top: 1rem;
+
+    &_first {
+      margin-bottom: 2rem;
+    }
+
+    &_second {
+    }
+  }
+
+  @media ($tablet) {
+    &__paragraphs {
+      max-width: 57.5rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  @media ($desktop) {
+    max-width: 144rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    &__img {
+      display: flex;
+      // max-width: 50%;
+      min-width: 45%;
+      align-items: stretch;
+      align-self: stretch;
+
+      &_mobile {
+        width: auto;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+    &__paragraphs {
+      font-size: 2.4rem;
+      padding-left: 5rem;
+      margin: 0 2rem 0 0;
+      &_first {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
