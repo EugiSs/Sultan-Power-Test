@@ -8,7 +8,7 @@
       background: linear-gradient(
         0.48deg,
         #f8c67d 11.28%,
-        rgba(255, 255, 255, 0) 53.99%
+        rgba(255, 255, 255, 0) 45%
       );
     }
   }
@@ -16,7 +16,7 @@
   &__paragraphs {
   }
 
-  @media ($desktop) {
+  @media ($laptop) {
     &__body {
       max-width: 144rem;
       display: flex;
@@ -31,7 +31,7 @@
         background: linear-gradient(
           90.22deg,
           #f8c67d 0.21%,
-          rgba(255, 255, 255, 0) 31.72%
+          rgba(255, 255, 255, 0) 45%
         );
       }
     }

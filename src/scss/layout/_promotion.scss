@@ -1,0 +1,55 @@
+.promotion {
+  padding-top: 2rem;
+  &__body {
+    @include cnt();
+  }
+
+  &__img {
+    max-width: 10rem;
+    margin-inline: auto;
+    & img {
+      @extend %img;
+      filter: drop-shadow(0px 4px 5px rgba(255, 255, 255, 0.25));
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-block: 2.5rem;
+  }
+
+  @media ($tablet) {
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media ($laptop) {
+    &__body {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &__img {
+      max-width: 14rem;
+      margin-inline: 3rem;
+    }
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media ($projector) {
+    &__img {
+      margin-inline: 6rem;
+    }
+    &__text {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.promotion.second {
+  background-color: $orange;
+}

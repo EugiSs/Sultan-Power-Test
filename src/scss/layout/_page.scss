@@ -1,0 +1,391 @@
+.page {
+  position: relative;
+  z-index: 99;
+  background: linear-gradient(
+      167.33deg,
+      #1d0707 17.84%,
+      rgba(0, 0, 0, 0) 25.25%
+    ),
+    linear-gradient(74.44deg, #1d0707 -1.46%, rgba(0, 0, 0, 0) 40.09%),
+    linear-gradient(89.58deg, #1d0707 -19.63%, rgba(0, 0, 0, 0) 30.77%),
+    url(@img/page/backgroung_mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 481px) {
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @media (min-width: 376px) {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -23%;
+        right: -25%;
+        width: 69vw;
+        height: 70vw;
+        background: url(@img/page/decor2_mobile.png) no-repeat;
+        background-size: contain;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -61%;
+        right: 31%;
+        width: 73vw;
+        height: 73vw;
+        max-width: 41rem;
+        max-height: 41rem;
+        background: url(@img/elements/mandala_mobile.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__content {
+    @include cnt();
+    min-height: 53rem;
+    padding-top: 2rem;
+
+    @media ($laptop) {
+      max-width: 128rem;
+    }
+  }
+
+  &__title {
+    @include h1();
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: $white;
+    margin-bottom: 3.5rem;
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__product {
+    margin-bottom: 4rem;
+  }
+
+  &__order {
+    position: absolute;
+    z-index: 99;
+    bottom: -49rem;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+
+  @media ($tablet) {
+    &__content {
+      padding-top: 4rem;
+      padding-inline: 3rem;
+    }
+    &__order {
+      bottom: -52rem;
+    }
+  }
+
+  @media ($laptop) {
+    background: linear-gradient(
+        167.33deg,
+        #1d0707 10.84%,
+        rgba(0, 0, 0, 0) 29.25%
+      ),
+      linear-gradient(74.44deg, #1d0707 12.54%, rgba(0, 0, 0, 0) 40.09%),
+      linear-gradient(89.58deg, #1d0707 1.37%, rgba(0, 0, 0, 0) 30.77%),
+      url(@img/page/backgroung.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__decor {
+      width: 0;
+    }
+    &__content {
+      padding-bottom: 4rem;
+    }
+    &__title {
+      max-width: 700px;
+      margin-bottom: 2.5rem;
+    }
+    &__text {
+      font-size: 2.2rem;
+      margin-bottom: 8.3rem;
+    }
+    &__body {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__product {
+      width: 53%;
+    }
+    &__order {
+      width: 41%;
+      max-width: 35.6rem;
+      position: static;
+      transform: translate(0, 0);
+      margin: 0;
+    }
+  }
+
+  @media ($desktop) {
+    &__decor {
+      width: 100%;
+      opacity: 0.3;
+      &::after {
+        bottom: -7rem;
+        right: -44rem;
+        max-width: 55rem;
+        max-height: 55rem;
+        background: url(@img/elements/mandala.png) no-repeat;
+        background-size: contain;
+      }
+      &::before {
+        bottom: auto;
+        right: auto;
+        top: 0rem;
+        left: -41rem;
+        max-width: 55rem;
+        max-height: 55rem;
+        background: url(@img/elements/mandala.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    &__title {
+      width: auto;
+      max-width: 101rem;
+    }
+    &__text {
+      font-size: 3.6rem;
+    }
+  }
+  @media ($projector) {
+    &__decor {
+      opacity: 1;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__items {
+  }
+
+  &__item {
+    max-width: 14.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $white;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &.item2,
+    &.item3 {
+      max-width: 7rem;
+    }
+  }
+
+  &__images {
+    max-height: 21.5rem;
+    min-height: 17.6rem;
+    width: 100%;
+    max-width: 21.6rem;
+    min-width: 17.6rem;
+    position: relative;
+    @media (min-width: 376px) {
+      left: 9%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & img {
+      width: 100%;
+    }
+    &.image1 {
+    }
+    &.image2 {
+      width: 110%;
+    }
+    &.image3 {
+      z-index: 2;
+      width: 31%;
+      top: 80%;
+      left: 85%;
+    }
+    &.image4 {
+      z-index: 4;
+      width: 213%;
+      top: 63%;
+    }
+    &.image5 {
+      z-index: 5;
+      width: 55.5%;
+      left: 83%;
+      top: 25%;
+    }
+    &.image6 {
+      z-index: 7;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 4.2rem;
+    height: 3.5rem;
+    z-index: 10;
+    & img {
+      width: 100%;
+    }
+
+    &.icon1 {
+      top: -7%;
+      left: 15%;
+    }
+    &.icon2 {
+      top: 27%;
+      left: -13%;
+    }
+    &.icon3 {
+      top: 53%;
+      left: -12%;
+    }
+    &.icon4 {
+      top: 83%;
+      left: 5%;
+    }
+  }
+
+  @media (min-width: 426px) {
+    &__item {
+      font-size: 1.5rem;
+      &.item1 {
+        padding-left: 1rem;
+      }
+      &.item2 {
+      }
+      &.item3 {
+        padding-left: 1rem;
+      }
+      &.item4 {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  @media ($tablet) {
+    &__images {
+      width: 21.6rem;
+    }
+    &__icon {
+      width: 5.2rem;
+      transform: translateX(-1rem);
+      &.icon1 {
+        transform: translate(-1rem, -1rem);
+      }
+    }
+  }
+
+  @media ($laptop) {
+    &__item {
+      max-width: 20rem;
+      font-size: 1.8rem;
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+      &.item2,
+      &.item3 {
+        max-width: 15rem;
+      }
+    }
+  }
+
+  @media ($desktop) {
+    width: 57%;
+    margin-top: 0;
+    &__items {
+      width: 50%;
+    }
+    &__item {
+      max-width: 28rem;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+      &.item1 {
+        padding-left: 2rem;
+      }
+      &.item4 {
+        max-width: 20.5rem;
+      }
+    }
+    &__images {
+      left: 0;
+      max-width: none;
+      max-height: none;
+      min-width: 30rem;
+      min-height: 30rem;
+    }
+    &__icon {
+      width: 8.9rem;
+      height: 7.3rem;
+      &.icon1 {
+      }
+      &.icon2 {
+        top: 22%;
+      }
+      &.icon3 {
+        top: 51%;
+      }
+      &.icon4 {
+      }
+    }
+  }
+
+  @media ($projector) {
+    width: 62%;
+    &__item {
+      font-size: 2.4rem;
+    }
+    &__images {
+      min-width: 45rem;
+      min-height: 45rem;
+    }
+    &__icon {
+      width: 8.9rem;
+      height: 7.3rem;
+      &.icon1 {
+        top: -3%;
+      }
+      &.icon2 {
+        top: 32%;
+      }
+      &.icon3 {
+        top: 54%;
+      }
+      &.icon4 {
+        top: 79%;
+      }
+    }
+  }
+}

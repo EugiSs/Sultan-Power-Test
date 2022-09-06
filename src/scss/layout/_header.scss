@@ -21,6 +21,10 @@
     @extend %btn;
     width: 28.4rem;
     padding-block: 1.2rem;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   @media ($tablet) {
@@ -28,7 +32,7 @@
       font-size: 1.8rem;
     }
   }
-  @media ($desktop) {
+  @media ($laptop) {
     padding-block: 3rem;
     &__body {
       max-width: 106.5rem;

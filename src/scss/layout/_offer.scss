@@ -1,6 +1,7 @@
 .offer {
   padding-top: 3.5rem;
   margin-bottom: 1.5rem;
+  margin-top: 37rem;
 
   &__title {
     @include cnt();
@@ -13,11 +14,10 @@
 
   &__img {
     &::after {
-      height: 85%;
       background: linear-gradient(
         360deg,
         #ffffff 14.15%,
-        rgba(36, 36, 36, 0) 61.74%
+        rgba(36, 36, 36, 0) 45%
       );
     }
   }
@@ -26,19 +26,24 @@
     padding-block: 1.5rem;
   }
 
-  @media ($desktop) {
+  @media ($tablet) {
+    margin-top: 40rem;
+  }
+
+  @media ($laptop) {
     background: url(../img/elements/mandala.png);
     background-repeat: no-repeat;
     background-position: -14rem -1rem;
-    background-size: 36%;
+    background-size: contain;
+    margin-top: 0;
     margin-bottom: 4rem;
+
     &__title {
       max-width: 80.6rem;
       margin-bottom: 6rem;
     }
     &__img {
       &::after {
-        height: 100%;
         background: linear-gradient(
           88.98deg,
           #ffffff 3.21%,

@@ -1,18 +1,17 @@
 .cards {
-  @include cnt();
-  max-width: none;
   background-color: #420707;
   border-radius: 1.5rem;
   padding: 2.7rem 1.6rem;
   margin-bottom: 3.5rem;
-  @media (min-width: 400px) {
+  margin-inline: 0.5rem;
+  @media (min-width: 426px) {
     margin-inline: 3.2rem;
   }
 
   &__content {
     border: 2px solid $white;
     border-radius: 1.5rem;
-    padding: 3rem 2rem;
+    padding: 3rem 0.5rem;
   }
 
   &__title {
@@ -24,6 +23,7 @@
   }
 
   &__body {
+    @include cnt();
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,12 +31,10 @@
   }
 
   &__item {
+    max-width: 39rem;
     width: 100%;
     position: relative;
-    margin: 1.7rem 1.6rem;
-    &:last-child {
-      mix-blend-mode: screen;
-    }
+    margin-bottom: 2.5rem;
 
     &::after {
       content: '';
@@ -53,10 +51,15 @@
   }
 
   @media ($tablet) {
-    margin-inline: 1.5rem;
+    &__title {
+      max-width: 20rem;
+    }
+    &__item {
+      margin: 1.7rem 1.6rem;
+    }
   }
 
-  @media ($desktop) {
+  @media ($laptop) {
     &__title {
       max-width: 40rem;
     }
@@ -65,8 +68,6 @@
     }
   }
   @media ($projector) {
-    max-width: 133rem;
     padding: 3.3rem 2.1rem;
-    margin-inline: auto;
   }
 }

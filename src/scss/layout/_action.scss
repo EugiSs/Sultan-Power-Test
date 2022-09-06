@@ -1,0 +1,179 @@
+.action {
+  position: relative;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32%;
+    background: linear-gradient(180deg, #250808 18%, rgba(0, 0, 0, 0) 48.74%),
+      url(../img/action/background_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    @media (min-width: 600px) {
+      height: 38%;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    margin: 0 0 2.5rem 0;
+  }
+
+  &__text {
+    max-width: 24rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: $white;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    max-width: 16.7rem;
+    padding: 2.5rem;
+    background: url(../img/elements/circles-dark_mobile.png) center / contain
+      no-repeat;
+
+    & img {
+      @extend %img;
+    }
+  }
+
+  &__order {
+  }
+
+  @media (min-width: 425px) {
+    &__background {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 2.2rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/action/decor1_mobile.png) no-repeat;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -35%;
+        right: -27%;
+        min-width: 37.3rem;
+        min-height: 34rem;
+        background: url(../img/action/decor2_mobile.png) no-repeat;
+      }
+    }
+  }
+
+  @media ($laptop) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 31%;
+      left: 38%;
+      width: 100%;
+      max-width: 46rem;
+      height: 100%;
+      background: url(../img/elements/mandala.png) no-repeat;
+      background-size: contain;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -15rem;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/action/decor3.png) no-repeat;
+      background-size: cover;
+    }
+    &__background {
+      min-height: 47.5rem;
+      background: linear-gradient(180deg, #250808 0%, rgba(0, 0, 0, 0) 45.74%),
+        url(../img/action/background.png) no-repeat;
+      background-size: cover;
+
+      &::before {
+        top: 8.2rem;
+        background: url(../img/action/decor1.png) no-repeat;
+      }
+      &::after {
+        top: -62%;
+        right: -0.5%;
+        min-width: 87rem;
+        min-height: 79.3rem;
+        background: url(../img/action/decor2.png) no-repeat;
+      }
+    }
+
+    &__decor {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 16%;
+        left: 52%;
+        width: 15.6rem;
+        height: 15.6rem;
+        background: url(../img/elements/circles-dark_mobile.png) no-repeat;
+        background-size: contain;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 33%;
+        right: 6%;
+        width: 12.2rem;
+        height: 12.2rem;
+        background: url(../img/elements/circles-dark_mobile.png) no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &__body {
+      flex-direction: row;
+      padding: 5rem 1.5rem 4rem;
+      margin-left: 10rem;
+    }
+    &__info {
+      width: 35%;
+      background: none;
+      padding-top: 2rem;
+      margin: 0 2.5rem 0 0;
+    }
+    &__text {
+      max-width: 40rem;
+      font-size: 2.4rem;
+    }
+    &__img {
+      max-width: 25.3rem;
+      background: url(../img/elements/circles-dark.png) center / contain
+        no-repeat;
+    }
+  }
+  @media (min-width: 1441px) {
+    &__background {
+      min-height: 62rem;
+    }
+  }
+}

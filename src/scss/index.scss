@@ -13,20 +13,15 @@ main {
   flex: 1 1 auto;
 }
 
+// decor
 .fw600 {
   font-weight: 600;
 }
 .fw900 {
   font-weight: 900;
 }
+.orange {
+  color: $orange;
+}
 
 
-// Скрыть стрелочки в циффровом инпуте
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type="number"] {
-  -moz-appearance: textfield;
-}

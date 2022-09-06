@@ -1,4 +1,19 @@
 .ingredients {
+  position: relative;
+  &::before {
+    content: url(../img/elements/mandala_mobile.png);
+    position: absolute;
+    top: -5.3rem;
+    left: -13.2rem;
+    opacity: 0.7;
+    @media (min-width: 426px) { 
+      opacity: 1;
+    }
+    @media ($laptop) {
+      display: none;
+    }
+  }
+
   &__head {
     position: relative;
     max-width: 18rem;
@@ -50,7 +65,7 @@
     max-width: 32rem;
   }
 
-  @media ($desktop) {
+  @media ($laptop) {
     &__head {
       max-width: 55rem;
       font-size: 2.4rem;

@@ -15,6 +15,10 @@
   "license": "MIT",
   "dependencies": {
     "gulp-cli": "^2.3.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
     "jquery-simple-timer": "^1.0.2"
   },
   "devDependencies": {
@@ -40,6 +44,7 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.0.9",
     "gulp-webpcss": "^1.1.1",
+    "imagemin-mozjpeg": "^10.0.0",
     "sass": "^1.52.1",
     "swiper": "^8.1.5",
     "webp-converter": "2.2.3",

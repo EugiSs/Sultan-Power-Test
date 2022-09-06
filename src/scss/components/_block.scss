@@ -38,7 +38,7 @@
     }
   }
 
-  @media ($desktop) {
+  @media ($laptop) {
     max-width: 144rem;
     display: flex;
     flex-direction: row-reverse;

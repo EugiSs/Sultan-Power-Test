@@ -1,15 +1,16 @@
 .patent {
+  position: relative;
+  z-index: 99;
   background-color: $orange;
   &__body {
   }
 
   &__img {
     &::after {
-      height: 65%;
       background: linear-gradient(
         0.84deg,
         $orange 18.04%,
-        rgba(255, 255, 255, 0) 54.89%
+        rgba(255, 255, 255, 0) 45%
       );
     }
   }
@@ -18,17 +19,16 @@
     padding-top: 1.5rem;
   }
 
-  @media ($desktop) {
+  @media ($laptop) {
     &__body {
       flex-direction: row;
     }
     &__img {
       &::after {
-        height: 100%;
         background: linear-gradient(
           270.78deg,
           $orange 9.07%,
-          rgba(255, 255, 255, 0) 60.25%
+          rgba(255, 255, 255, 0) 45%
         );
       }
     }

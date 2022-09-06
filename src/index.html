@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -19,19 +19,90 @@
       <div class="header__body">
         <p class="header__text">Хочешь почувствовать себя настоящим султаном
           в постели?</p>
-        <button class="header__btn">Узнать как</button>
+        <a href="#order" class="header__btn">Узнать как</a>
       </div>
     </header>
 
     <main>
       <section class="page">
-        <h1 class="page__title"></h1>
-        <p class="page__text"></p>
-        <div class="page__body">
-          <div class="page__product">
+        <div class="page__decor"></div>
+        <div class="page__content">
+          <h1 class="page__title">Открой новые возможности и
+            <span class="orange">пробуди</span> неизведанные <span class="orange">ощущения</span>
+          </h1>
+          <p class="page__text">Открывает новые возможности и пробуждает неизведанные ощущения</p>
+          <div class="page__body">
+            <div class="page__product product">
+              <ul class="product__items">
+                <li class="product__item item1">Увеличение продолжительности полового акта</li>
+                <li class="product__item item2">Устойчивая эрекция</li>
+                <li class="product__item item3">Яркие
+                  оргазмы</li>
+                <li class="product__item item4">Юношеская активность в постели</li>
+              </ul>
+              <div class="product__images">
+                <picture class="product__image image1">
+                  <source media="(max-width: 768px)" srcset="./img/elements/circles_mobile.png" type="image/png">
+                  <source media="(min-width: 769px)" srcset="./img/elements/circles-light.png" type="image/png">
+                  <img src="./img/elements/circles-light.png" alt="decor-img">
+                </picture>
 
+                <picture class="product__image image2">
+                  <source media="(max-width: 768px)" srcset="./img/elements/circle_mobile.png" type="image/png">
+                  <source media="(min-width: 769px)" srcset="./img/elements/circle.png" type="image/png">
+                  <img src="./img/elements/circle.png" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image3">
+                  <source media="(max-width: 768px)" srcset="./img/elements/circles-little_mobile.png" type="image/png">
+                  <source media="(min-width: 769px)" srcset="./img/elements/circles-little.png" type="image/png">
+                  <img src="./img/elements/circles-little.png" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image4">
+                  <source media="(max-width: 768px)" srcset="./img/elements/lightning_mobile.png" type="image/png">
+                  <source media="(min-width: 769px)" srcset="./img/elements/lightning.png" type="image/png">
+                  <img src="./img/elements/lightning.png" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image5">
+                  <source media="(max-width: 768px)" srcset="./img/page/decor1_mobile.png" type="image/png">
+                  <source media="(min-width: 769px)" srcset="./img/page/decor1.png" type="image/png">
+                  <img src="./img/page/decor1.png" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image6">
+                  <source media="(max-width: 768px)" srcset="./img/product_mobile.png" type="image/png">
+                  <source media="(min-width: 769px)" srcset="./img/product.png" type="image/png">
+                  <img src="./img/product.png" alt="product-img">
+                </picture>
+
+                <picture class="product__icon icon1">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+                <picture class="product__icon icon2">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+                <picture class="product__icon icon3">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+                <picture class="product__icon icon4">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+              </div>
+            </div>
+            <div class="page__order order">
+              @@include('html/order.html')
+            </div>
           </div>
-          <div class="page__action"></div>
         </div>
       </section>
 
@@ -110,12 +181,12 @@
         </div>
       </section>
 
-      <section class="blurb">
-        <div class="blurb__body">
-          <div class="blurb__img">
+      <section class="promotion first">
+        <div class="promotion__body">
+          <div class="promotion__img">
             <img src="./img/product.png" alt="product-img">
           </div>
-          <p class="blurb__text">
+          <p class="promotion__text">
             Сила Султана разработана на основе древнетурецких рецептов, которые описаны еще в старинных преданиях
             летописцев-монахов. Вы почувствуете себя настоящим повелителем!
           </p>
@@ -170,32 +241,32 @@
               <picture class="impact__icon icon1">
                 <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
                 <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
-                <img src="./img/icons/vote_mobile.png" alt="vote-icon">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
               </picture>
               <picture class="impact__icon icon2">
                 <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
                 <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
-                <img src="./img/icons/vote_mobile.png" alt="vote-icon">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
               </picture>
               <picture class="impact__icon icon3">
                 <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
                 <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
-                <img src="./img/icons/vote_mobile.png" alt="vote-icon">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
               </picture>
               <picture class="impact__icon icon4">
                 <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
                 <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
-                <img src="./img/icons/vote_mobile.png" alt="vote-icon">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
               </picture>
               <picture class="impact__icon icon5">
                 <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
                 <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
-                <img src="./img/icons/vote_mobile.png" alt="vote-icon">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
               </picture>
               <picture class="impact__icon icon6">
                 <source media="(max-width: 769px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
                 <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
-                <img src="./img/icons/vote_mobile.png" alt="vote-icon">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
               </picture>
 
 
@@ -232,6 +303,28 @@
         </div>
       </section>
 
+      <section class="action">
+        <div class="action__background"></div>
+        <div class="action__decor"></div>
+        <div class="action__body">
+          <div class="action__info">
+            <p class="action__text">Хочешь почувствовать себя
+              настоящим султаном
+              в постели?</p>
+            <div class="action__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./img/product_mobile.png" type="image/png">
+                <source media="(min-width: 769px)" srcset="./img/product.png" type="image/png">
+                <img src="@img/product.png" alt="product-img">
+              </picture>
+            </div>
+          </div>
+          <div class="action__order order" id="order">
+            @@include('html/order.html')
+          </div>
+        </div>
+      </section>
+
       <section class="ingredients">
         <div class="ingredients__head">
           <picture class="ingredients__image image1">
@@ -244,8 +337,10 @@
             <source media="(min-width: 769px)" srcset="./img/ingredients/tablet2.png" type="image/png">
             <img src="./img/ingredients/tablet2.png" alt="product-img">
           </picture>
-          Каждая таблетка – это мощный комплекс
-          <span class="fw900">100%</span> натуральных компонентов.
+          <div class="ingredients__text">
+            Каждая таблетка – это мощный комплекс
+            <span class="fw900">100%</span> натуральных компонентов.
+          </div>
         </div>
         <div class="ingredients__content">
           <div class="ingredients__body">
@@ -253,10 +348,9 @@
               <h4 class="ingredient__title">корень женьшеня обыкновенного</h4>
               <div class="ingredient__img">
                 <picture>
-                  <source media="(max-width: 1025px)" srcset="./img/ingredients/card1-image_mobile.png"
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card1-image_mobile.png"
                     type="image/png">
                   <source media="(min-width: 1025px)" srcset="./img/ingredients/card1-image.png" type="image/png">
-                  <source>
                   <img src="./img/ingredients/card1-image_mobile.png" alt="ingredient-img">
                 </picture>
               </div>
@@ -272,8 +366,9 @@
               <h4 class="ingredient__title">Экстракт коры муира пуама</h4>
               <div class="ingredient__img">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="./img/ingredients/card2-image_mobile.png" type="image/png">
-                  <source media="(min-width: 769px)" srcset="./img/ingredients/card2-image.png" type="image/png">
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card2-image_mobile.png"
+                    type="image/png">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card2-image.png" type="image/png">
                   <img src="./img/ingredients/card2-image.png" alt="product-img">
                 </picture>
               </div>
@@ -286,8 +381,9 @@
               <h4 class="ingredient__title">Корень эврикомы длиннолистной</h4>
               <div class="ingredient__img">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="./img/ingredients/card3-image_mobile.png" type="image/png">
-                  <source media="(min-width: 769px)" srcset="./img/ingredients/card3-image.png" type="image/png">
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card3-image_mobile.png"
+                    type="image/png">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card3-image.png" type="image/png">
                   <img src="./img/ingredients/card3-image.png" alt="product-img">
                 </picture>
               </div>
@@ -299,12 +395,12 @@
             </div>
 
             <div class="ingredients__ingredient ingredient" id="ingredient4">
-              <h4 class="ingredient__title">Ягоды <br>
-                асаи</h4>
+              <h4 class="ingredient__title">Ягоды асаи</h4>
               <div class="ingredient__img">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="./img/ingredients/card4-image_mobile.png" type="image/png">
-                  <source media="(min-width: 769px)" srcset="./img/ingredients/card4-image.png" type="image/png">
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card4-image_mobile.png"
+                    type="image/png">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card4-image.png" type="image/png">
                   <img src="./img/ingredients/card4-image.png" alt="product-img">
                 </picture>
               </div>
@@ -315,6 +411,19 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="promotion second">
+        <div class="promotion__body">
+          <div class="promotion__img">
+            <img src="./img/product.png" alt="product-img">
+          </div>
+          <p class="promotion__text">
+            Вам не нужно судорожно принимать таблетку перед самим актом. Вы султан и самостоятельно выбираете, когда
+            хотите интимной
+            близости. Не спешите, получаeте удовольствие и уверенность от своей решительности.
+          </p>
         </div>
       </section>
     </main>
