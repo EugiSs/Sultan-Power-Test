@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
-    rel="stylesheet"> -->
+    rel="stylesheet">
   <title>Sultan Power</title>
   <link rel="stylesheet" href="css/index.min.css">
 </head>
@@ -19,36 +19,153 @@
       <div class="header__body">
         <p class="header__text">Хочешь почувствовать себя настоящим султаном
           в постели?</p>
-        <button class="header__btn">Узнать как</button>
+        <a href="#order" class="header__btn">Узнать как</a>
       </div>
     </header>
 
     <main>
       <section class="page">
-        <h1 class="page__title"></h1>
-        <p class="page__text"></p>
-        <div class="page__body">
-          <div class="page__product">
+        <div class="page__decor"></div>
+        <div class="page__content">
+          <h1 class="page__title">Открой новые возможности и
+            <span class="orange">пробуди</span> неизведанные <span class="orange">ощущения</span>
+          </h1>
+          <p class="page__text">Открывает новые возможности и пробуждает неизведанные ощущения</p>
+          <div class="page__body">
+            <div class="page__product product">
+              <ul class="product__items">
+                <li class="product__item item1">Увеличение продолжительности полового акта</li>
+                <li class="product__item item2">Устойчивая эрекция</li>
+                <li class="product__item item3">Яркие
+                  оргазмы</li>
+                <li class="product__item item4">Юношеская активность в постели</li>
+              </ul>
+              <div class="product__images">
+                <picture class="product__image image1">
+                  <source media="(max-width: 768px)" srcset="./img/elements/circles_mobile.webp" type="image/webp">
+                  <source media="(min-width: 769px)" srcset="./img/elements/circles-light.webp" type="image/webp">
+                  <img src="./img/elements/circles-light.webp" alt="decor-img">
+                </picture>
 
+                <picture class="product__image image2">
+                  <source media="(max-width: 768px)" srcset="./img/elements/circle_mobile.webp" type="image/webp">
+                  <source media="(min-width: 769px)" srcset="./img/elements/circle.webp" type="image/webp">
+                  <img src="./img/elements/circle.webp" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image3">
+                  <source media="(max-width: 768px)" srcset="./img/elements/circles-little_mobile.webp" type="image/webp">
+                  <source media="(min-width: 769px)" srcset="./img/elements/circles-little.webp" type="image/webp">
+                  <img src="./img/elements/circles-little.webp" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image4">
+                  <source media="(max-width: 768px)" srcset="./img/elements/lightning_mobile.webp" type="image/webp">
+                  <source media="(min-width: 769px)" srcset="./img/elements/lightning.webp" type="image/webp">
+                  <img src="./img/elements/lightning.webp" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image5">
+                  <source media="(max-width: 768px)" srcset="./img/page/decor1_mobile.webp" type="image/webp">
+                  <source media="(min-width: 769px)" srcset="./img/page/decor1.webp" type="image/webp">
+                  <img src="./img/page/decor1.webp" alt="decor-img">
+                </picture>
+
+                <picture class="product__image image6">
+                  <source media="(max-width: 768px)" srcset="./img/product_mobile.webp" type="image/webp">
+                  <source media="(min-width: 769px)" srcset="./img/product.webp" type="image/webp">
+                  <img src="./img/product.webp" alt="product-img">
+                </picture>
+
+                <picture class="product__icon icon1">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+                <picture class="product__icon icon2">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+                <picture class="product__icon icon3">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+                <picture class="product__icon icon4">
+                  <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                  <img src="./img/icons/vote.svg" alt="vote-icon">
+                </picture>
+              </div>
+            </div>
+            <div class="page__order order">
+              <!-- <div class="order"> -->
+  <div class="order__content">
+    <p class="order__title">
+      Успей получить <span class="fw600">Силу Султана бесплатно*</span>, пока действует акция
+    </p>
+    <div class="order__timer">
+      <div class="timer">
+        <p class="timer__descr">Акция* закончится через</p>
+        <div class="timer__body">
+          <div class="timer__time">
+            <div class="timer__time_num hours">1</div>
+            <p class="timer__time_text">Часов</p>
           </div>
-          <div class="page__action"></div>
+          <span class="timer__divider">:</span>
+          <div class="timer__time">
+            <div class="timer__time_num minutes">7</div>
+            <p class="timer__time_text">Минут</p>
+          </div>
+          <span class="timer__divider">:</span>
+          <div class="timer__time">
+            <div class="timer__time_num seconds">25</div>
+            <p class="timer__time_text">Секунд</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="order__form">
+      <div class="order__field">
+        <p class="order__field_title">Ваше имя*</p>
+        <input class="order__field_input input-name" type="text">
+      </div>
+      <div class="order__field">
+        <p class="order__field_title">Контактный телефон*</p>
+        <input class="order__field_input input-phone"  placeholder="+ (7)">
+      </div>
+      <button class="order__btn submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+    </form>
+    <div class="order__note">
+      <span class="fw600">*при заказе курса</span>
+      Осталось всего 23 бесплатных упаковок
+    </div>
+  </div>
+<!-- </div> -->
+
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="offer">
         <h2 class="offer__title">Получите такое же удовольствие в постели, как султан от своего гарема!</h2>
-        <div class="offer__body">
-          <div class="offer__img">
-            <img class="offer__img_mobile" src="./img/offer/1.jpg" alt="content-img">
-            <img class="offer__img_desktop" src="./img/offer/2.jpg" alt="content-img">
+        <div class="offer__body block">
+          <div class="offer__img block__img">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="./img/offer/1_mobile.webp" type="image/webp">
+              <source media="(max-width: 1025px)" srcset="./img/offer/1.webp" type="image/webp">
+              <img src="./img/offer/1.webp" alt="sultan-img">
+            </picture>
           </div>
-          <div class="offer__paragraphs">
-            <p class="offer__paragraphs_first">
+          <div class="offer__paragraphs block__paragraphs">
+            <p class="offer__paragraphs_first block__paragraphs_first">
               Какие ассоциации возникают при упоминании гарема? Красивые девушки,
               сидящие на софах. Сауны, где наложницы натирают себя
               ароматическими смесями. Битва, в которой сотни красавиц сражаются за внимание повелителя.
             </p>
-            <p class="offer__paragraphs_second">
+            <p class="offer__paragraphs_second block__paragraphs_second">
               Такие же ощущения вы испытаете после приема
               <span class="fw600">Силы Султана!</span>
             </p>
@@ -65,19 +182,19 @@
           <div class="cards__body">
             <div class="cards__item card">
               <div class="card__img">
-                <img src="./img/cards/1.jpg" alt="card-img">
+                <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.webp" alt="card-img"></picture>
               </div>
               <div class="card__title">Сексуальные обряды</div>
             </div>
             <div class="cards__item card">
               <div class="card__img">
-                <img src="./img/cards/2.jpg" alt="card-img">
+                <picture><source srcset="./img/cards/2.webp" type="image/webp"><img src="./img/cards/2.webp" alt="card-img"></picture>
               </div>
               <div class="card__title">Натуральные стимуляторы <span>сексуальной активности</span></div>
             </div>
             <div class="cards__item card">
               <div class="card__img">
-                <img src="./img/cards/3.jpg" alt="card-img">
+                <picture><source srcset="./img/cards/3.webp" type="image/webp"><img src="./img/cards/3.webp" alt="card-img"></picture>
               </div>
               <div class="card__title">Интимная гимнастика</div>
             </div>
@@ -86,17 +203,20 @@
       </section>
 
       <section class="recommendation">
-        <div class="recommendation__body">
-          <div class="recommendation__img">
-            <img src="./img/recommendation/1.jpg" class="recommendation__img_mobile" alt="medical conference">
-            <img src="./img/recommendation/2.jpg" class="recommendation__img_desktop" alt="medical conference">
+        <div class="recommendation__body block">
+          <div class="recommendation__img block__img">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="./img/recommendation/1_mobile.webp" type="image/webp">
+              <source media="(max-width: 1025px)" srcset="./img/recommendation/1.webp" type="image/webp">
+              <img src="./img/recommendation/1.webp" alt="medical-conference-img">
+            </picture>
           </div>
-          <div class="recommendation__paragraphs">
-            <p class="recommendation__paragraphs_first">
+          <div class="recommendation__paragraphs block__paragraphs">
+            <p class="recommendation__paragraphs_first block__paragraphs_first">
               <span class="fw600">Сила Султана</span>
               решает проблему комплексно, а не просто временно устраняет синдромы
             </p>
-            <p class="recommendation__paragraphs_second">
+            <p class="recommendation__paragraphs_second block__paragraphs_second">
               Рекомендован врачами для лечения, профилактики и получения новых ощущений
               Никаких побочных эффектов и негативного воздействия на организм.
             </p>
@@ -104,7 +224,294 @@
         </div>
       </section>
 
+      <section class="promotion first">
+        <div class="promotion__body">
+          <div class="promotion__img">
+            <picture><source srcset="./img/product.webp" type="image/webp"><img src="./img/product.webp" alt="product-img"></picture>
+          </div>
+          <p class="promotion__text">
+            Сила Султана разработана на основе древнетурецких рецептов, которые описаны еще в старинных преданиях
+            летописцев-монахов. Вы почувствуете себя настоящим повелителем!
+          </p>
+        </div>
+      </section>
 
+      <section class="impact">
+        <div class="impact__content">
+          <h2 class="impact__title">Как
+            <span class="fw600">Сила Султана</span> борется
+            с проблемой?
+          </h2>
+          <div class="impact__body">
+            <div class="impact__items items-top">
+              <p class="impact__item" id="impact-1">
+                Стимулирует естественную выработку тестостерона
+              </p>
+              <p class="impact__item" id="impact-2">
+                Усиливает ощущения
+              </p>
+              <p class="impact__item" id="impact-3">
+                Обеспечивает стойкую и твердую эрекцию
+              </p>
+            </div>
+            <div class="impact__images">
+              <picture class="impact__image image1">
+                <source media="(max-width: 768px)" srcset="./img/elements/circles-dark_mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="./img/elements/circles-dark.webp" type="image/webp">
+                <img src="./img/elements/circles-dark.webp" alt="decor-img">
+              </picture>
+              <picture class="impact__image image2">
+                <source media="(max-width: 768px)" srcset="./img/elements/circle_mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="./img/elements/circle.webp" type="image/webp">
+                <img src="./img/elements/circle.webp" alt="decor-img">
+              </picture>
+              <picture class="impact__image image3">
+                <source media="(max-width: 768px)" srcset="./img/elements/lightning_mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="./img/elements/lightning.webp" type="image/webp">
+                <img src="./img/elements/lightning.webp" alt="decor-img">
+              </picture>
+              <picture class="impact__image image4">
+                <source media="(max-width: 768px)" srcset="./img/impact/tablets_mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="./img/impact/tablets.webp" type="image/webp">
+                <img src="./img/impact/tablets.webp" alt="decor-img">
+              </picture>
+              <picture class="impact__image image5">
+                <source media="(max-width: 768px)" srcset="./img/impact/tablet_mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="./img/impact/tablet.webp" type="image/webp">
+                <img src="./img/impact/tablet.webp" alt="decor-img">
+              </picture>
+
+              <picture class="impact__icon icon1">
+                <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
+              </picture>
+              <picture class="impact__icon icon2">
+                <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
+              </picture>
+              <picture class="impact__icon icon3">
+                <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
+              </picture>
+              <picture class="impact__icon icon4">
+                <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
+              </picture>
+              <picture class="impact__icon icon5">
+                <source media="(max-width: 768px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
+              </picture>
+              <picture class="impact__icon icon6">
+                <source media="(max-width: 769px)" srcset="./img/icons/vote_mobile.svg" type="image/svg+xml">
+                <source media="(min-width: 769px)" srcset="./img/icons/vote.svg" type="image/svg+xml">
+                <img src="./img/icons/vote.svg" alt="vote-icon">
+              </picture>
+
+
+            </div>
+            <div class="impact__items items-bottom">
+              <p class="impact__item" id="impact-4">Повышает либидо и решительность</p>
+              <p class="impact__item" id="impact-5">Увеличивает продолжительность полового акта</p>
+              <p class="impact__item" id="impact-6">Пробуждает сильное сексуальное желание</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="patent">
+        <div class="patent__body block">
+          <div class="patent__img block__img">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="./img/patent/1_mobile.webp" type="image/webp">
+              <source media="(max-width: 1025px)" srcset="./img/patent/1.webp" type="image/webp">
+              <img src="./img/patent/1.webp" alt="conference-img">
+            </picture>
+          </div>
+          <div class="patent__paragraphs block__paragraphs">
+            <p>
+              Наши врачи несколько лет работали в Турции, собирая секретные ингредиенты древнетурецких средств для
+              повышения потенции.
+              Мы запатентовали
+              <span class="fw600">Силу Султана</span>, получили официальное право производить и реализовывать препарат
+              по России и
+              в странах
+              СНГ. Все подтверждающие документы и лицензии в электронном виде расположены на странице нашего сайта.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="action">
+        <div class="action__background"></div>
+        <div class="action__decor"></div>
+        <div class="action__body">
+          <div class="action__info">
+            <p class="action__text">Хочешь почувствовать себя
+              настоящим султаном
+              в постели?</p>
+            <div class="action__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./img/product_mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="./img/product.webp" type="image/webp">
+                <img src="./img/product.webp" alt="product-img">
+              </picture>
+            </div>
+          </div>
+          <div class="action__order order" id="order">
+            <!-- <div class="order"> -->
+  <div class="order__content">
+    <p class="order__title">
+      Успей получить <span class="fw600">Силу Султана бесплатно*</span>, пока действует акция
+    </p>
+    <div class="order__timer">
+      <div class="timer">
+        <p class="timer__descr">Акция* закончится через</p>
+        <div class="timer__body">
+          <div class="timer__time">
+            <div class="timer__time_num hours">1</div>
+            <p class="timer__time_text">Часов</p>
+          </div>
+          <span class="timer__divider">:</span>
+          <div class="timer__time">
+            <div class="timer__time_num minutes">7</div>
+            <p class="timer__time_text">Минут</p>
+          </div>
+          <span class="timer__divider">:</span>
+          <div class="timer__time">
+            <div class="timer__time_num seconds">25</div>
+            <p class="timer__time_text">Секунд</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="order__form">
+      <div class="order__field">
+        <p class="order__field_title">Ваше имя*</p>
+        <input class="order__field_input input-name" type="text">
+      </div>
+      <div class="order__field">
+        <p class="order__field_title">Контактный телефон*</p>
+        <input class="order__field_input input-phone"  placeholder="+ (7)">
+      </div>
+      <button class="order__btn submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+    </form>
+    <div class="order__note">
+      <span class="fw600">*при заказе курса</span>
+      Осталось всего 23 бесплатных упаковок
+    </div>
+  </div>
+<!-- </div> -->
+
+          </div>
+        </div>
+      </section>
+
+      <section class="ingredients">
+        <div class="ingredients__head">
+          <picture class="ingredients__image image1">
+            <source media="(max-width: 768px)" srcset="./img/ingredients/tablet1_mobile.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="./img/ingredients/tablet1.webp" type="image/webp">
+            <img src="./img/ingredients/tablet1.webp" alt="product-img">
+          </picture>
+          <picture class="ingredients__image image2">
+            <source media="(max-width: 768px)" srcset="./img/ingredients/tablet2_mobile.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="./img/ingredients/tablet2.webp" type="image/webp">
+            <img src="./img/ingredients/tablet2.webp" alt="product-img">
+          </picture>
+          <div class="ingredients__text">
+            Каждая таблетка – это мощный комплекс
+            <span class="fw900">100%</span> натуральных компонентов.
+          </div>
+        </div>
+        <div class="ingredients__content">
+          <div class="ingredients__body">
+            <div class="ingredients__ingredient ingredient" id="ingredient1">
+              <h4 class="ingredient__title">корень женьшеня обыкновенного</h4>
+              <div class="ingredient__img">
+                <picture>
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card1-image_mobile.webp"
+                    type="image/webp">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card1-image.webp" type="image/webp">
+                  <img src="./img/ingredients/card1-image_mobile.webp" alt="ingredient-img">
+                </picture>
+              </div>
+              <p class="ingredient__text">
+                Повышает половое влечение, восполняет дефицит витаминов. Увеличивает синтез тестостерона, усиливает
+                приток
+                крови к
+                члену, что обеспечивает стойкую и продолжительную эрекцию.
+              </p>
+            </div>
+
+            <div class="ingredients__ingredient ingredient" id="ingredient2">
+              <h4 class="ingredient__title">Экстракт коры муира пуама</h4>
+              <div class="ingredient__img">
+                <picture>
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card2-image_mobile.webp"
+                    type="image/webp">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card2-image.webp" type="image/webp">
+                  <img src="./img/ingredients/card2-image.webp" alt="product-img">
+                </picture>
+              </div>
+              <p class="ingredient__text">
+                Улучшает качество спермы и подвижность сперматозоидов. Поддерживают необходимый уровень тестостерона.
+              </p>
+            </div>
+
+            <div class="ingredients__ingredient ingredient" id="ingredient3">
+              <h4 class="ingredient__title">Корень эврикомы длиннолистной</h4>
+              <div class="ingredient__img">
+                <picture>
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card3-image_mobile.webp"
+                    type="image/webp">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card3-image.webp" type="image/webp">
+                  <img src="./img/ingredients/card3-image.webp" alt="product-img">
+                </picture>
+              </div>
+              <p class="ingredient__text">
+                Сильный афродизиак, повышает сексуальное влечение и положительно влияет на качество полового акта.
+                Улучшает выносливость
+                и физическую активность.
+              </p>
+            </div>
+
+            <div class="ingredients__ingredient ingredient" id="ingredient4">
+              <h4 class="ingredient__title">Ягоды асаи</h4>
+              <div class="ingredient__img">
+                <picture>
+                  <source media="(max-width: 1024px)" srcset="./img/ingredients/card4-image_mobile.webp"
+                    type="image/webp">
+                  <source media="(min-width: 1025px)" srcset="./img/ingredients/card4-image.webp" type="image/webp">
+                  <img src="./img/ingredients/card4-image.webp" alt="product-img">
+                </picture>
+              </div>
+              <p class="ingredient__text">
+                Растительный аналог «Виагры»: способствует стойкой эрекции, усиливает сексуальное возбуждение и
+                пролонгирует ощущения во
+                время оргазма.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promotion second">
+        <div class="promotion__body">
+          <div class="promotion__img">
+            <picture><source srcset="./img/product.webp" type="image/webp"><img src="./img/product.webp" alt="product-img"></picture>
+          </div>
+          <p class="promotion__text">
+            Вам не нужно судорожно принимать таблетку перед самим актом. Вы султан и самостоятельно выбираете, когда
+            хотите интимной
+            близости. Не спешите, получаeте удовольствие и уверенность от своей решительности.
+          </p>
+        </div>
+      </section>
     </main>
 
   </div>
