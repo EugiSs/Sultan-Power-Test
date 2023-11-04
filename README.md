@@ -1,6 +1,6 @@
 ## Тестовое задание
 
-[Посмотреть сайт](https://evgiss.github.io/Sultan-Power-Test/)
+[Посмотреть сайт](https://eugiss.github.io/Sultan-Power-Test/)
 
 ## Использовалось при написании
 - SCSS
